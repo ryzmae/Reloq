@@ -4,3 +4,17 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+anyhow = "1.0.97"
+chrono = "0.4.40"
+clap = { version = "4.5.31", features = ["derive"] }
+dashmap = "6.1.0"
+prost = "0.13.5"
+rusqlite = { version = "0.34.0", features = ["bundled"] }
+serde = { version = "1.0.218", features = ["derive"] }
+thiserror = "2.0.12"
+tokio = { version = "1.44.0", features = ["full"] }
+tonic = "0.12.3"
+uuid = { version = "1.15.1", features = ["v4"] }
+
+[build-dependencies]
+tonic-build = "0.12.3"
